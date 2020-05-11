@@ -1,0 +1,603 @@
+
+
+html{
+    background-color: rgb(13, 13,41) !important;
+    color: white !important;
+    font-family: 'Merriweather';
+    font-size: 12px;
+}
+
+/**Header**/
+/**
+ * Images a now responsive
+ */
+ 
+ img {
+	max-width: 100%;
+	height: auto;
+}
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.containerr {
+	width: 100%;
+	max-width: 100%;
+    /* padding: 20px; */
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    /* background-color:yellow; */
+}
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    /* background-color: lawngreen; */
+}
+.main-header .containerr {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.ninja-studio{
+    display: inline-flex;
+}
+.header-p{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    /* background-color: brown; */
+    width: 20%;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid inherit;
+  
+  padding: 5px;
+  height: 20px;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
+  color:inherit;
+}
+
+.searchTerm:focus{
+  color: inherit;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid inherit;
+  background:  rgb(13, 13,41);
+  text-align: center;
+  color:inherit;
+  border-radius: 5px 0px 0xp 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: relative;
+  border: 1px solid inherit;
+  border-radius: 5px;
+ 
+}
+
+/**New Release Img**/
+#new-release-ig {
+    
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    position: relative;
+    
+    
+    padding: 5%;
+    margin-top: 2%;
+    /* background-color:green; */
+}
+
+#new-release-ig img{
+    position:relative;
+    
+    height:100% !important;
+    width:28% !important;
+    transition: 0.2s all;
+    transform: scale(0.8);
+}
+#new-release-ig img:hover{
+    transform: scale(1.25,1.25);
+    z-index: 1;
+}
+#new-release-ig:hover img{
+    opacity: 0.5;
+    filter: blur(2px);
+    
+}
+#new-release-ig:hover img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/**Latest Release**/
+#latest-release{
+   
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    /* background-color: chartreuse; */
+    /* height: 0.75vh; */
+}
+.music-details{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 45%;
+    /* background-color: crimson; */
+    /* padding: 2%; */
+}
+
+.music-text{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    /* padding: 2%; */
+    /* background-color: aqua; */
+}
+.music-text-t{
+    padding: 7%;
+    
+}
+.dropdown-icon{
+    position: relative;
+    top: 0;
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+.time-stamp{
+    width: 100%;
+    /* background-color: burlywood; */
+}
+.l-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+    width: 100%;
+}
+/**Popular Artists**/
+
+#pop-artists{
+    position: relative;
+    width: 75%;
+    margin-top: 2%;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    /* background-color: lightblue; */
+}
+.a-icon{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color:  rgb(13, 13,41);
+    border-style: solid;
+    overflow: hidden;
+}
+.a-icon img{
+    height:100%;
+    width: 100%;
+    
+}
+.artist-icons{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: darkgoldenrod; */
+}
+.container-pop {
+    position: relative;
+  
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-pop:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container-pop:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: inherit;
+    color: white;
+    /* font-size: 16px; */
+    /* padding: 16px 32px; */
+  }
+/**Music-icons**/
+#music-icons{
+    width: 75%;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color:rgb(19, 15, 69);
+}
+.m-icon{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border-color:  rgb(13, 13,41);
+    border-style: solid;
+    overflow: hidden;
+    
+}
+/**Music Genre**/
+#music-genre{
+    width: 75%;
+    height: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: inherit;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.music-genre-icon{
+    width: 30%;
+    height: 100%;
+    /* background-color: chartreuse; */
+   
+}
+.music-genre-icon img{
+    width: 100%;
+    height: 10%;
+}
+
+/**LatestEnglishHindi**/
+#latest-he{
+    width: 75%;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    /* padding-right: 0%; */
+    /* background-color: crimson; */
+}
+.l-icons-he{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: cornflowerblue; */
+}
+.l-icon-he{
+    width: 20%;
+    /* background-color: coral; */
+    
+}
+.l-icon-he img{
+    height: 100px;
+    width: 100px;
+    /* background-color: darkmagenta; */
+}
+
+/**Queue aside**/
+#que{
+    position: fixed;
+    right: 0;
+    margin-right: 2%;
+    height: 100%;
+    width: 15%;
+    top: 14%;
+    /* background-color:yellow; */
+}
+#q-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+div.q-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1%;
+    overflow: scroll;
+    height: 80%;
+}
+
+.song{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-left: 2%;
+    background-color: inherit;
+}
+.song-icon img{
+    width: 50px;
+    height: 50px;
+}
+/**Common classes**/
+
+
+.text-center{
+    text-align: center;
+}
+.bold-text{
+    font-weight: bold;
+    font-size: large;
+}
+.mgtop2{
+    margin-top: 2%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mgrt2{
+    margin-right: 2%;
+}
+.mglt0{
+    margin-left: 0%;
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/*dropdown*/
+.dropbtn {
+    background-color:inherit;
+    color: white;
+    /* padding: 16px;
+    font-size: 16px; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:inherit;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* .dropbtn:active{
+      display: block;
+      overflow: hidden;
+  } */
+  
+  .dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+  
+  /***Artist Page***/
+
+  /*Artist Description*/
+  #artist-desc{
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      min-height: 100%;
+      margin: 5%;
+      margin-bottom: 0;
+      background-color:rgb(19, 15, 69);
+      
+  }
+  #des{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+      margin: 5%;
+      height: 100%;
+  }
+  #des1{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      width: 250%;
+      
+  }
+  #des-buttons{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+  }
+  #des-buttons>div{
+      width: 10%;
+      background-color:purple;
+      margin-right: 10px;
+      padding: 1%;
+  }
+  /*Artist Song*/
+  #artist-songs{
+      background-color: inherit;
+      display: flex;
+      flex-direction: column;
+      margin: 5%;
+      margin-top: 0%;
+      width: 70%;
+      /* justify-content: space-between; */
+      
+      
+  }
+  #artist-songs>div{
+      width: 100%;
+      background-color:rgb(26,28,53) ;
+  }
+  /*Similar Artists*/
+
+  #similar-artists{
+    position: fixed;
+    right: 2%;
+    margin-right: 2%;
+    height: 50%;
+    width: 15%;
+    top: 14%;
+  }
+  .song-similar-artists{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .song-similar-artists-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1%;
+    overflow: scroll;
+    height: 80%;
+    width: 100%;
+    background-color:inherit;
+  }
+  .song-text{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  /*Recently Played*/
+  
+  #recently-played{
+    position: fixed;
+    right: 2%;
+    margin-right: 2%;
+    height: 40%;
+    width: 15%;
+    top: 62%;
+    background-color: inherit;
+  }
+
+  /*Footer Audio Player*/
+  #audio-player{
+      width: 100%;
+      z-index: 1;
+      position: fixed;
+      bottom: 0;
+      background-color: rgb(40, 40, 40);
+      padding: 1%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: large;
+      /* align-content: ; */
+  }
+  .pl-img{
+      height: 50px;
+      width: 50px;
+      
+  }
+  .song-des-pl{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 4%;
+      
+      
+  }
+  .song-dt{
+      width: 100px;
+      height: 50px;
+      overflow-x: hidden;
+  }
+  .art-img{
+    position: relative;
+    left: 4%;
+    margin-right: 10px;
+  }
+
+  
+
+  
